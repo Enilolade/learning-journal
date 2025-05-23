@@ -1,0 +1,38 @@
+#sign-in-btn {
+  display: none;
+}
+
+form {
+  background-color: #050a30;
+  border-radius: 0.5rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0;
+  max-width: 15.63rem;
+  margin: 1rem auto 0;
+}
+
+input {
+  border: 0.1rem solid #050a30;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+input:hover,
+input:focus {
+  box-shadow: 0.05rem 0.05rem 0.3rem #fff;
+}
+
+.log-in-btn {
+  color: #fff;
+  border: 0.1rem solid #fff;
+}
+
+.log-in-btn:hover {
+  background-color: #fff;
+  color: #050a30;
+  text-decoration: underline;
+}

@@ -1,0 +1,29 @@
+#sign-in-btn {
+  display: none;
+}
+
+.comment-list li {
+  background-color: #787777;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.edit-comment,
+.delete-comment {
+  background-color: transparent;
+  border: none;
+  border-radius: 0.5rem;
+  color: #050a30;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-left: 10px;
+  padding: 0.5rem;
+}
+
+.edit-comment:hover,
+.delete-comment:hover {
+  background-color: #ebe5e5;
+}

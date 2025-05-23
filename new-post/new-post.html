@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Apple Touch Icon (for iOS home screen) -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/devDotLog-favicon/apple-touch-icon.png"
+    />
+
+    <!-- Favicon sizes for modern browsers -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/devDotLog-favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/devDotLog-favicon/favicon-16x16.png"
+    />
+
+    <!-- Manifest (for Android PWA support) -->
+    <link rel="manifest" href="./images/devDotLog-favicon/site.webmanifest" />
+
+    <title>Dev Learning Journal</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./new-post.css" />
+  </head>
+  <body>
+    <header>
+      <a href="./index.html" class="logo-button">
+        <img
+          id="logo"
+          src="./images/logo.png"
+          alt="logo image serving as home button"
+        />
+      </a>
+      <a href="#" type="submit" class="user-avatar">
+        <img
+          src="./images/no-image-avatar.png"
+          alt="Avatar or profile picture of the user"
+          class="user-avatar avatar"
+        />
+      </a>
+    </header>
+    <section class="write-post">
+      <form action="">
+        <div class="form-group">
+          <label for="title">Post Title</label>
+          <input type="text" id="title" name="title" required />
+        </div>
+        <div class="form-group">
+          <label for="content">Content</label>
+          <textarea id="content" name="content" rows="10" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
