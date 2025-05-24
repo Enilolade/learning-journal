@@ -1,10 +1,47 @@
-.user-avatar:hover {
-  /* filter: drop-shadow(0 0 0.75rem rgba(84, 4, 4, 0.1)); */
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+body {
+  color: #050a30;
 }
 
 form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.new-post {
+  padding: 2rem;
+}
+
+.form-group {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  /* gap: 1rem; */
+}
+
+label {
+  font-weight: 600;
+}
+
+#title,
+#content {
+  border: 1px solid #050a30;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.post-submit-btn {
+  align-self: center;
+  border: 1px solid #050a30;
+  border-radius: 0.5rem;
+  color: #050a30;
+  font-weight: 500;
+  width: 5rem;
+  padding: 0.3rem;
+}
+
+.post-submit-btn:hover,
+.post-submit-btn:active {
+  background-color: #050a30;
+  border: 1px solid #fff;
+  color: #fff;
 }

@@ -12,7 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Please fill in both fields.");
       return;
     }
+
     if (password === "ILoveProgramming") {
+      // Store the username before redirecting
+      localStorage.setItem("loggedInUsername", username);
+
       window.location.href = "../logged-in/logged-in.html";
     } else {
       alert("Incorrect password. Please try again.");
