@@ -12,6 +12,14 @@
   font-weight: 600;
 }
 
+details h3,
+details p {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
 .comment-list li {
   background-color: #c8c5c5;
   border-radius: 0.5rem;

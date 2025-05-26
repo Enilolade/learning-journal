@@ -32,15 +32,71 @@ header {
   position: sticky;
   top: 0;
   background-color: var(--post-bg-color);
-  z-index: 10000000;
+  padding: 0 1rem;
+  z-index: 100;
+}
+
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0.5rem;
+}
+
+.menu-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fa-bars {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.menu-items {
+  background-color: #050a30;
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  height: 100%;
+  list-style-type: none;
+  margin-top: 2rem;
+  padding: 2rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  width: 50%;
+  z-index: 1000;
+}
+
+.hidden {
+  display: none;
+}
+
+.menu-items li {
+  cursor: pointer;
+  margin-bottom: 0.8rem;
+}
+
+.menu-items a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-sign-in-btn {
+  border: 0.1rem solid var(--post-bg-color);
+  color: var(--post-bg-color);
 }
 
 #logo {
   width: 5rem;
+}
+
+.user-avatar {
+  border: 3px solid #050a30;
+  border-radius: 100%;
+  height: 3rem;
+  width: 3rem;
 }
 
 button {
@@ -50,17 +106,23 @@ button {
   font-family: var(--body-font);
 }
 
+.menu-sign-in-btn,
 .sign-in-btn,
 .submit-comment,
 .log-in-btn {
-  border: 0.1rem solid var(--darker-primary-color);
   border-radius: 0.5rem;
-  color: var(--darker-primary-color);
   font-size: 0.7rem;
   letter-spacing: 0.063rem;
   padding: 0.3rem 0.5rem;
   text-decoration: none;
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.sign-in-btn,
+.submit-comment,
+.log-in-btn {
+  border: 0.1rem solid var(--darker-primary-color);
+  color: var(--darker-primary-color);
 }
 
 .sign-in-btn:hover,
@@ -204,6 +266,7 @@ footer {
   color: #fff;
   padding: 0.5rem 0;
   text-align: center;
+  z-index: 10000;
 }
 
 footer p {

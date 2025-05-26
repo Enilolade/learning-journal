@@ -2,6 +2,10 @@ body {
   color: #050a30;
 }
 
+#sign-in-btn {
+  display: none;
+}
+
 form {
   display: flex;
   flex-direction: column;

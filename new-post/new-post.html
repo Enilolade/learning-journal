@@ -50,20 +50,49 @@
   </head>
   <body>
     <header>
-      <a href="../logged-in/logged-in.html" class="logo-button">
-        <img
-          id="logo"
-          src="../images/logo.png"
-          alt="logo image serving as home button"
-        />
-      </a>
-      <a href="#" type="submit" class="user-avatar">
-        <img
-          src="../images/no-image-avatar.png"
-          alt="Avatar or profile picture of the user"
-          class="user-avatar avatar"
-        />
-      </a>
+      <nav>
+        <div class="menu-logo">
+          <div id="side-menu" class="menu">
+            <button id="menu-btn">
+              <i id="menu-icon" class="fa-solid fa-bars"></i>
+            </button>
+            <ul id="menu-items" class="menu-items hidden">
+              <li id="menu-close"><i class="fa-solid fa-xmark"></i></li>
+              <li><strong>devDotLog</strong></li>
+              <li><a href="../logged-in/logged-in.html">Home</a></li>
+              <li>
+                <a
+                  href="../log-in/login.html"
+                  class="menu-sign-in-btn"
+                  type="submit"
+                  >Sign In</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a href="../logged-in/logged-in.html" class="logo-button">
+            <img
+              id="logo"
+              src="../images/logo.png"
+              alt="logo image serving as home button"
+            />
+          </a>
+        </div>
+        <a href="#">
+          <img
+            class="user-avatar"
+            src="../images/no-image-avatar.png"
+            alt="avatar of the user"
+          />
+        </a>
+        <a
+          href="./log-in/login.html"
+          class="sign-in-btn"
+          id="sign-in-btn"
+          type="submit"
+          >Sign In</a
+        >
+      </nav>
     </header>
     <main>
       <section class="new-post">
@@ -88,6 +117,7 @@
         <p>Created by Enilolade with ❤️</p>
       </div>
     </footer>
+    <script src="../header.js"></script>
     <script src="./new-post.js"></script>
   </body>
 </html>

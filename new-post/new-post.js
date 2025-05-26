@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const postSubmitBtn = document.querySelector("#post-submit-btn");
 
   postSubmitBtn.addEventListener("click", (e) => {
-    e.preventDefault(); // Prevent form submission
+    e.preventDefault();
 
     const title = postTitle.value.trim();
     const content = postContent.value.trim();
@@ -16,14 +16,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const newPost = {
+      id: Date.now(),
       title,
       content,
       username,
       jobTitle: "Frontend Developer",
       avatar: "../images/no-image-avatar.png",
+      createdAt: new Date().toISOString(),
     };
 
-    localStorage.setItem("newPost", JSON.stringify(newPost));
+    const existingPosts = JSON.parse(localStorage.getItem("allPosts")) || [];
+    existingPosts.push(newPost);
+    localStorage.setItem("allPosts", JSON.stringify(existingPosts));
+
     window.location.href = "../logged-in/logged-in.html";
   });
 });

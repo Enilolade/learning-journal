@@ -49,26 +49,48 @@
   </head>
   <body>
     <header>
-      <a href="./index.html" class="logo-button">
-        <img
-          id="logo"
-          src="./images/logo.png"
-          alt="logo image serving as home button"
-        />
-      </a>
-      <a
-        href="./log-in/login.html"
-        class="sign-in-btn"
-        id="sign-in-btn"
-        type="submit"
-        >Sign In</a
-      >
+      <nav>
+        <div class="menu-logo">
+          <div id="side-menu" class="menu">
+            <button id="menu-btn">
+              <i id="menu-icon" class="fa-solid fa-bars"></i>
+            </button>
+            <ul id="menu-items" class="menu-items hidden">
+              <li id="menu-close"><i class="fa-solid fa-xmark"></i></li>
+              <li><strong>devDotLog</strong></li>
+              <li><a href="./index.html">Home</a></li>
+              <li>
+                <a
+                  href="./log-in/login.html"
+                  class="menu-sign-in-btn"
+                  type="submit"
+                  >Sign In</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a href="./index.html" class="logo-button">
+            <img
+              id="logo"
+              src="./images/logo.png"
+              alt="logo image serving as home button"
+            />
+          </a>
+        </div>
+        <a
+          href="./log-in/login.html"
+          class="sign-in-btn"
+          id="sign-in-btn"
+          type="submit"
+          >Sign In</a
+        >
+      </nav>
     </header>
     <main>
       <section class="hero-section">
         <h1>Hi, fellow learner</h1>
         <p>
-          Welcome to devDotLog. <br />
+          <strong>Welcome to devDotLog.</strong> <br />
           Here, I share my journey of learning and growth. Feel free to explore
           my posts and share your thoughts!
         </p>
@@ -115,138 +137,6 @@
             </button>
           </div>
         </article>
-        <article>
-          <div class="user-info">
-            <img
-              src="./images/person-1-avatar.png"
-              alt="Profile Picture of post owner"
-              class="avatar"
-            />
-            <div class="username-job">
-              <h2 class="writer-name">John Doe</h2>
-              <p class="job-title">Developer</p>
-            </div>
-          </div>
-          <details>
-            <summary>
-              <h3 class="post-title">My First Post</h3>
-            </summary>
-            <p>
-              This is the content of my first post. I'm excited to share my
-              learning journey with you!
-            </p>
-          </details>
-          <div class="post-actions">
-            <button class="like-btn">
-              <i class="fa-solid fa-thumbs-up"></i>
-              <span>Like</span>
-              <span class="like-count">0</span>
-            </button>
-            <button class="comment-btn">
-              <i class="fa-solid fa-comment"></i>
-              <span>Comment</span>
-            </button>
-          </div>
-        </article>
-        <article>
-          <div class="user-info">
-            <img
-              src="./images/person-1-avatar.png"
-              alt="Profile Picture of post owner"
-              class="avatar"
-            />
-            <div class="username-job">
-              <h2 class="writer-name">John Doe</h2>
-              <p class="job-title">Developer</p>
-            </div>
-          </div>
-          <details>
-            <summary>
-              <h3 class="post-title">My First Post</h3>
-            </summary>
-            <p>
-              This is the content of my first post. I'm excited to share my
-              learning journey with you!
-            </p>
-          </details>
-          <div class="post-actions">
-            <button class="like-btn">
-              <i class="fa-solid fa-thumbs-up"></i>
-              <span>Like</span>
-              <span class="like-count">0</span>
-            </button>
-            <button class="comment-btn">
-              <i class="fa-solid fa-comment"></i>
-              <span>Comment</span>
-            </button>
-          </div>
-        </article>
-        <article>
-          <div class="user-info">
-            <img
-              src="./images/person-1-avatar.png"
-              alt="Profile Picture of post owner"
-              class="avatar"
-            />
-            <div class="username-job">
-              <h2 class="writer-name">John Doe</h2>
-              <p class="job-title">Developer</p>
-            </div>
-          </div>
-          <details>
-            <summary>
-              <h3 class="post-title">My First Post</h3>
-            </summary>
-            <p>
-              This is the content of my first post. I'm excited to share my
-              learning journey with you!
-            </p>
-          </details>
-          <div class="post-actions">
-            <button class="like-btn">
-              <i class="fa-solid fa-thumbs-up"></i>
-              <span>Like</span>
-              <span class="like-count">0</span>
-            </button>
-            <button class="comment-btn">
-              <i class="fa-solid fa-comment"></i>
-              <span>Comment</span>
-            </button>
-          </div>
-        </article>
-        <article>
-          <div class="user-info">
-            <img
-              src="./images/person-1-avatar.png"
-              alt="Profile Picture of post owner"
-              class="avatar"
-            />
-            <div class="username-job">
-              <h2 class="writer-name">John Doe</h2>
-              <p class="job-title">Developer</p>
-            </div>
-          </div>
-          <details>
-            <summary>
-              <h3 class="post-title">My First Post</h3>
-            </summary>
-            <p>
-              This is the content of my first post. I'm excited to share my
-              learning journey with you!
-            </p>
-          </details>
-          <div class="post-actions">
-            <button class="like-btn">
-              <i class="fa-solid fa-thumbs-up"></i>
-              <span>Like</span>
-              <span class="like-count">0</span>
-            </button>
-            <button class="comment-btn">
-              <i class="fa-solid fa-comment"></i>
-              <span>Comment</span>
-            </button>
-          </div>
-        </article>
       </section>
     </main>
     <footer>
@@ -255,6 +145,7 @@
         <p>Created by Enilolade with ❤️</p>
       </div>
     </footer>
+    <script src="./header.js"></script>
     <script src="./index.js"></script>
     <!-- <a href="./log-in/login.html"></a> -->
   </body>
