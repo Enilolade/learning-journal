@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   allPosts
     .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)) // Newest first
-    .forEach(({ title, content, username, jobTitle, avatar }) => {
+    .forEach(({ title, content, username, jobTitle, avatar, createdAt }) => {
       const article = document.createElement("article");
       article.innerHTML = `
         <div class="user-info">
@@ -36,6 +36,17 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="username-job">
             <h2 class="writer-name">${username}</h2>
             <p class="job-title">${jobTitle}</p>
+            <p class="date" id="date">${
+              createdAt &&
+              createdAt.toLocaleString("en-US", {
+                weekday: "short",
+                month: "short",
+                day: "numeric",
+                hour: "2-digit",
+                minute: "2-digit",
+                hour12: false,
+              })
+            }</p>
           </div>
         </div>
         <details>
